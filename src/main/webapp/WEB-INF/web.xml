@@ -1,0 +1,47 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Webster</display-name>
+    <servlet>
+        <servlet-name>Start</servlet-name>
+        <servlet-class>jrg.view.Start</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Start</servlet-name>
+        <url-pattern>/Start</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Messages</servlet-name>
+        <servlet-class>jrg.view.Messages</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Messages</servlet-name>
+        <url-pattern>/Messages</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>Stop</servlet-name>
+        <servlet-class>jrg.view.Stop</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Stop</servlet-name>
+        <url-pattern>/Stop</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Home</servlet-name>
+        <servlet-class>jrg.view.Home</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Home</servlet-name>
+        <url-pattern>/Home</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>

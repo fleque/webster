@@ -13,8 +13,9 @@ There were quite a few of dummy smtp servers out there, but my specific problem 
 
 *Requirements*
 
-  * Java JDK 6+
-  * Servlet Container
+  * [http://www.oracle.com/technetwork/java/javase/downloads/index.html Java JDK 6+]
+  * [http://maven.apache.org/download.html Maven]
+  * Servlet Container, e.g. [http://tomcat.apache.org/download-70.cgi Tomcat]
 
 *Building And Installing*
 

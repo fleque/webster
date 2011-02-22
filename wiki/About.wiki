@@ -3,7 +3,7 @@
 Webster is a web wrapper around the the Dumbster Project: [http://quintanasoft.com/dumbster/].
 
 = Motivation =
-There were quite a few of dummy smtp servers out there, but my specific problem was that testers outside of the administration and development group needed to see the emails being sent in testing environments.  This app hopes to provide a way to host a dummy smtp server with universal access.
+There were quite a few of dummy smtp servers out there, but my specific problem was that testers outside of the administration and development group needed to see the emails being sent in testing environments.  This app hopes to provide a way to host a dummy smtp server with universal access.  After I reach a certain amount of stability and feature richness, I suspect this project will go cold as far as I'm concerned, its goals aren't lofty; but if you want to send suggestions and time willing I can apply them I will try, feel free to contact me and share your ideas.  If you want to be a contributor to the project, let me know as well.
 
 
 = Help =

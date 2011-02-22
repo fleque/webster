@@ -1,4 +1,4 @@
-[Home] | [About] | [News]
+[http://code.google.com/p/webster/ Home] | [About] | [News]
 
 = Introduction =
 

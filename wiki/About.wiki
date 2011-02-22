@@ -1,4 +1,4 @@
-Always read [News] too.
+[Home] | [About] | [News]
 
 = Introduction =
 
@@ -16,6 +16,11 @@ There were quite a few of dummy smtp servers out there, but my specific problem 
   * Messages - This displays the list of messages sent to the server, most recent first.  They are stored in memory, so stopping the server and/or starting the server again will erase the messages.  This is a good way to clear them.
 
   * Stop - Simply stops the server.
+
+*Requirements*
+
+  * Java JDK 6+
+  * Servlet Container
 
 *Building And Installing*
 

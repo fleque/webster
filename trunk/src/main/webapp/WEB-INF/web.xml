@@ -1,37 +1,43 @@
+<!--
+  ~ /*
+  ~  * Webster - is a dummy SMTP server from the Dumbster project wrapped in a web app
+  ~  * Copyright 2011 Joseph Ray Greenawalt
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License");
+  ~  * you may not use this file except in compliance with the License.
+  ~  * You may obtain a copy of the License at
+  ~  *
+  ~  * http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software
+  ~  * distributed under the License is distributed on an "AS IS" BASIS,
+  ~  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  * See the License for the specific language governing permissions and
+  ~  * limitations under the License.
+  ~  */
+  -->
+
 <!DOCTYPE web-app PUBLIC
         "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
         "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
+
     <display-name>Webster</display-name>
     <servlet>
         <servlet-name>Start</servlet-name>
         <servlet-class>jrg.view.Start</servlet-class>
     </servlet>
 
-    <servlet-mapping>
-        <servlet-name>Start</servlet-name>
-        <url-pattern>/Start</url-pattern>
-    </servlet-mapping>
     <servlet>
         <servlet-name>Messages</servlet-name>
         <servlet-class>jrg.view.Messages</servlet-class>
     </servlet>
 
-    <servlet-mapping>
-        <servlet-name>Messages</servlet-name>
-        <url-pattern>/Messages</url-pattern>
-    </servlet-mapping>
-
-<servlet>
+    <servlet>
         <servlet-name>Stop</servlet-name>
         <servlet-class>jrg.view.Stop</servlet-class>
     </servlet>
-
-    <servlet-mapping>
-        <servlet-name>Stop</servlet-name>
-        <url-pattern>/Stop</url-pattern>
-    </servlet-mapping>
 
     <servlet>
         <servlet-name>Home</servlet-name>
@@ -39,9 +45,34 @@
     </servlet>
 
     <servlet-mapping>
+        <servlet-name>Start</servlet-name>
+        <url-pattern>/Start</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet-mapping>
+        <servlet-name>Messages</servlet-name>
+        <url-pattern>/Messages</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet-mapping>
+        <servlet-name>Stop</servlet-name>
+        <url-pattern>/Stop</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet-mapping>
         <servlet-name>Home</servlet-name>
         <url-pattern>/Home</url-pattern>
     </servlet-mapping>
+
+
+    <welcome-file-list>
+        <welcome-file>/Home</welcome-file>
+    </welcome-file-list>
 
 
 </web-app>

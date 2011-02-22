@@ -242,11 +242,11 @@ public class SimpleSmtpServer implements Runnable {
      * Returns the list reversed
      * Added by Webster
      */
-    public synchronized List<SmtpMessage> getReceivedMail(){
-        Collections.reverse(receivedMail);
-        return receivedMail;
-
-    }
+//    public synchronized List<SmtpMessage> getReceivedMail(){
+//        Collections.reverse(receivedMail);
+//        return receivedMail;
+//
+//    }
   /**
    * Get the number of messages received.
    * @return size of received email list

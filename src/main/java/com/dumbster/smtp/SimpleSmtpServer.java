@@ -14,6 +14,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+/**
+ * File originally developed by Jason Paul Kitchen for the Dumbster Project.
+ * Certain parts edited and added to by Joseph Ray Greenawalt for the Webster Project
+ */
 package com.dumbster.smtp;
 
 import java.io.BufferedReader;
@@ -226,6 +231,7 @@ public class SimpleSmtpServer implements Runnable {
 
   /**
    * Get email received by this instance since start up.
+   * Edited by Webster
    * @return List of String
    */
   public synchronized ListIterator<SmtpMessage> getReceivedEmail() {

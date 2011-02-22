@@ -33,4 +33,4 @@ There were quite a few of dummy smtp servers out there, but my specific problem 
   * Help - Takes you here.
 
 *Testing*
-  * In the [http://code.google.com/p/webster/downloads/list Downloads] section there is a MailSend.groovy that will send a test message.  Its pretty raw, but its a nice template to test that webster is running correctly.  Adjust accordingly to the settings you need.
+  * In the [http://code.google.com/p/webster/downloads/list Downloads] section there is a {{{ MailSend.groovy }}} that will send a test message.  Its pretty raw, but its a nice template to test that webster is running correctly.  Adjust accordingly to the settings you need.  I got most if not all of it from the web somewhere.  I'll give credit, but I can't find it now.

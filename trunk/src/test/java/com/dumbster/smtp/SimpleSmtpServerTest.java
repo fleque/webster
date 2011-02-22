@@ -18,15 +18,15 @@ package com.dumbster.smtp;
 
 import junit.framework.TestCase;
 
-import javax.mail.Session;
 import javax.mail.Message;
-import javax.mail.Transport;
 import javax.mail.MessagingException;
-import javax.mail.internet.MimeMessage;
+import javax.mail.Session;
+import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
-import java.util.Properties;
+import javax.mail.internet.MimeMessage;
 import java.util.Date;
-import java.util.Iterator;
+import java.util.ListIterator;
+import java.util.Properties;
 
 public class SimpleSmtpServerTest extends TestCase {
   private static final int SMTP_PORT = 1081;
@@ -56,8 +56,8 @@ public class SimpleSmtpServerTest extends TestCase {
     }
 
     assertTrue(server.getReceivedEmailSize() == 1);
-    Iterator emailIter = server.getReceivedEmail();
-    SmtpMessage email = (SmtpMessage) emailIter.next();
+    ListIterator<SmtpMessage> emailIter = server.getReceivedEmail();
+    SmtpMessage email = (SmtpMessage) emailIter.previous();
     assertTrue(email.getHeaderValue("Subject").equals("Test"));
     assertTrue(email.getBody().equals("Test Body"));
   }
@@ -72,8 +72,8 @@ public class SimpleSmtpServerTest extends TestCase {
     }
 
     assertTrue(server.getReceivedEmailSize() == 1);
-    Iterator emailIter = server.getReceivedEmail();
-    SmtpMessage email = (SmtpMessage) emailIter.next();
+    ListIterator<SmtpMessage> emailIter = server.getReceivedEmail();
+    SmtpMessage email = (SmtpMessage) emailIter.previous();
     assertTrue(email.getBody().equals(bodyWithCR));
   }
 
@@ -158,8 +158,8 @@ public class SimpleSmtpServerTest extends TestCase {
     }
 
     assertTrue(server.getReceivedEmailSize() == 2);
-    Iterator emailIter = server.getReceivedEmail();
-    SmtpMessage email = (SmtpMessage) emailIter.next();
+    ListIterator<SmtpMessage> emailIter = server.getReceivedEmail();
+    SmtpMessage email = (SmtpMessage) emailIter.previous();
     assertTrue(email.getHeaderValue("Subject").equals("Test"));
     assertTrue(email.getBody().equals("Test Body"));
   }

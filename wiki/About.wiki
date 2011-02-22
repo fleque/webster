@@ -1,3 +1,5 @@
+Always read [News] too.
+
 = Introduction =
 
 Webster is a web wrapper around the the Dumbster Project: [http://quintanasoft.com/dumbster/].

@@ -24,8 +24,13 @@ There were quite a few of dummy smtp servers out there, but my specific problem 
   * Installing - Simply deploy the webster.war file to your servlet container.  e.g. In tomcat drop it in  your /webapps folder.  In tomcaat if you keep the webstar.war file name the context should be /webster.  Changing the context *SHOULDN'T* break it, if you need another name.
 
 *Menu Items*
-  * Home - Takes you to the Home page where you can start the server.  When you start a server you should enter a port number to run the SMPT server on.  Whatever that port number is, you aren't going to be able to start it if the privileges running your servlet container do not have the privileges to open up a server to listen on said port.  Only one SMTP server runs at a time.  If you start a server when one is already running, it will stop the running server (erase the messages) and start a new one.
+  * Home - Takes you to the Home page where you can start the server.  When you start a server you should enter a port number to run the SMTP server on.  Whatever that port number is, you aren't going to be able to start it if the privileges running your servlet container do not have the privileges to open up a server to listen on said port.  Only one SMTP server runs at a time.  If you start a server when one is already running, it will stop the running server (erase the messages) and start a new one.
 
   * Messages - This displays the list of messages sent to the server, most recent first.  They are stored in memory, so stopping the server and/or starting the server again will erase the messages.  This is a good way to clear them.
 
   * Stop - Simply stops the server.
+
+  * Help - Takes you here.
+
+*Testing*
+  * In the [http://code.google.com/p/webster/downloads/list Downloads] section there is a MailSend.groovy that will send a test message.  Its pretty raw, but its a nice template to test that webster is running correctly.  Adjust accordingly to the settings you need.

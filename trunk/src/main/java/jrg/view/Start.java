@@ -35,20 +35,6 @@ import java.io.PrintWriter;
  */
 public class Start extends Webster {
 
-    public void doGet(HttpServletRequest request,
-                      HttpServletResponse response)
-            throws ServletException, IOException {
-        PrintWriter out = response.getWriter();
-        response.setContentType("text/html");
-        out.println(getPrettyMenu(request));
-
-
-        if (isServerStopped()) {
-            putServer(new Integer("5000"));
-            out.println("Started");
-
-        }
-    }
 
     public void doPost(HttpServletRequest request,
                        HttpServletResponse response)
@@ -59,6 +45,10 @@ public class Start extends Webster {
 
 
         String serverPort = request.getParameter("serverPort");
+
+        if (serverPort == null || serverPort == ""){
+            serverPort = "5000";
+        }
 
         if (!isServerStopped()) {
             stopServer();
